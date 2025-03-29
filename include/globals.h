@@ -2,17 +2,18 @@
  * TCRetrophone: RP2040-based Telephone Central Office Simulator
  * (c) 2025, Tammy Cravit <tammy@tammymakesthings.com>
  *
- * File       : config.h
- * Description: Configuration Settings
+ * File       : globals.h
+ * Description: Global variables
  ******************************************************************************/
 
 #pragma once
 
-#ifndef __HAS_CONFIG_H__
-#define __HAS_CONFIG_H__
+#ifndef __HAS_GLOBALS_H__
+#define __HAS_GLOBALS_H__
 
-#ifndef LED_BUILTIN
-#define LED_BUILTIN 13
-#endif
+#include "Arduino.h"
 
-#endif // __HAS_CONFIG_H__
+#include "config.h"
+#include "data_structures.h"
+
+#endif // __HAS_GLOBALS_H__
