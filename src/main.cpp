@@ -13,6 +13,12 @@
 #include "debug.h"
 #include "tcretrophone.h"
 
+/*------------------------------------------------------------------------------
+ * Declare all the interfaces for the switch.Note that there's no checking of
+ * whether the data here is valid or the number of lines matches the definition
+ * of NUM_PHONE_INTERFACES yet.
+ *------------------------------------------------------------------------------*/
+
 phone_interface_t PHONE_LINES[NUM_PHONE_INTERFACES] = {
     {"5205551234", 13, 14, 15, 16, UNINITIALIZED},
     {"5205559876", 21, 22, 23, 24, UNINITIALIZED}};
